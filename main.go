@@ -45,7 +45,7 @@ func Fail(c *gin.Context, status int, code, message string) {
 func main() {
 	r := gin.Default()
 
-	r.GET("/api/users/:id", func(c *gin.Context) {
+	r.GET("/api/universe/:id", func(c *gin.Context) {
 		id := c.Param("id")
 		// Simulate a lookup
 		if id == "0" {
